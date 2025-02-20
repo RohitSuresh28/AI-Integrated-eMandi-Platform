@@ -3,7 +3,7 @@ import mysql.connector
 
 # MongoDB connection
 try:
-    client = MongoClient("mongodb+srv://rohitsureshcs22:Rohit@emandi.h8kzw.mongodb.net/latest")
+    client = MongoClient("Mongo_DB Connection String")
     db = client.latest  # Connect to 'eMandi' database
     print("MongoDB connected successfully!")
 
@@ -28,7 +28,7 @@ try:
     mysql_conn = mysql.connector.connect(
         host='localhost',       # Replace with your MySQL host
         user='root',            # Replace with your MySQL username
-        password='Rohit@2809',  # Replace with your MySQL password
+        password='Password',  # Replace with your MySQL password
         database='agri_analysis'  # Replace with your MySQL database name
     )
 
