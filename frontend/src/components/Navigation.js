@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles.css'; // Ensure you have styles for your navigation
-import '/Users/rohitsuresh/Downloads/eMandi-main/frontend/src/pages/landingpage.css';
+import './src/pages/landingpage.css';
 const Navigation = () => {
     return (
         <nav className="navigation">
