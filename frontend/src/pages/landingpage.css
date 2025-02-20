@@ -1,0 +1,70 @@
+/* styles.css */
+.navigation {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    /* Add some padding */
+    background-color: #155724;
+    /* Background color for the navigation */
+}
+
+.login-buttons-container {
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+    display: flex;
+    /* Use flexbox for alignment */
+    gap: 10px;
+    /* Space between buttons */
+}
+
+.login-buttons-container li {
+    display: inline;
+    /* Display list items inline */
+}
+
+.btn.primary {
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    /* White text */
+    border: none;
+    /* No border */
+    padding: 10px 20px;
+    /* Padding */
+    cursor: pointer;
+    /* Pointer cursor */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.btn.primary:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.external-link-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.external-link-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #1e2aaf, #2e359f);
+}

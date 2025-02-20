@@ -1,0 +1,709 @@
+Navbar Styles .navbar {
+  background-color: #ffffff;
+  padding: 15px 30px;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
+}
+
+.navbar-logo h1 {
+  font-size: 24px;
+  color: #269e02;
+  font-family: 'Verdana', sans-serif;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link:hover {
+  color: #f8f9fa;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.navbar-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Dropdown Styles */
+.navbar-dropdown {
+  position: relative;
+}
+
+.navbar-dropdown-btn {
+  background-color: #1e7e01;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.navbar-dropdown-btn:hover {
+  background-color: #ffffff;
+}
+
+.navbar-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f8f9fa;
+  color: #098f09;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px;
+}
+
+.navbar-dropdown:hover .navbar-dropdown-content {
+  display: block;
+}
+
+.navbar-dropdown-item {
+  color: #343a40;
+  text-decoration: none;
+  padding: 8px 0;
+  display: block;
+  font-size: 16px;
+}
+
+.navbar-dropdown-item:hover {
+  background-color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-dropdown-btn {
+    margin-top: 10px;
+  }
+}
+
+/* Farmer Page Styles */
+.farmer-page {
+  background-color: #ffffff;
+  font-family: Verdana, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #4CAF50;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+/* Form Section */
+.form-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-input {
+  margin-bottom: 15px;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  margin-top: 5px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.form-input input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn.primary {
+  background-color: #5e5e5e;
+  color: white;
+}
+
+.btn.secondary {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn.secondary:hover {
+  background-color: #f0f0f0;
+}
+
+/* Message Styles */
+.message {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Bids List */
+.bids-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.bids-list li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bids-list li:hover {
+  background-color: #f0f8ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .farmer-page {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .form-section {
+    padding: 15px;
+  }
+
+  .form-input input {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
+
+/* Buyer Page Styles */
+.buyer-page {
+  background-color: #ffffff;
+  font-family: 'Verdana', sans-serif;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #4CAF50;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+/* Form Section */
+.form-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-input {
+  margin-bottom: 15px;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  margin-top: 5px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.form-input input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn.primary {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn.secondary {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn.secondary:hover {
+  background-color: #f0f0f0;
+}
+
+/* Produce List Styles */
+.produce-section {
+  margin-bottom: 30px;
+}
+
+.produce-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.produce-item {
+  background-color: #ffffff;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.produce-item p {
+  margin: 5px 0;
+}
+
+.produce-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .buyer-page {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+
+  .form-section {
+    padding: 15px;
+  }
+
+  .form-input input {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
+
+/* Logistics Page Styles */
+.logistics-page {
+  background-color: #ffffff;
+  font-family: 'Verdana', sans-serif;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #4CAF50;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+/* Form Section */
+.form-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-input {
+  margin-bottom: 15px;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  margin-top: 5px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.form-input input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn.primary {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn.secondary {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn.secondary:hover {
+  background-color: #f0f0f0;
+}
+
+/* Tasks List Styles */
+.tasks-section {
+  margin-bottom: 30px;
+}
+
+.task-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.task-item {
+  background-color: #ffffff;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item p {
+  margin: 5px 0;
+}
+
+.task-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logistics-page {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+
+  .form-section {
+    padding: 15px;
+  }
+
+  .form-input input {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
+
+
+/* new */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #173b20e3;
+}
+
+.navbar {
+  background-color: #3d3d3d;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  /* Position relative for absolute positioning of overlay */
+  height: 60vh;
+  /* Set the height of the hero section */
+  display: flex;
+  flex-direction: column;
+  /* Stack elements vertically */
+  align-items: center;
+  /* Center align items */
+  justify-content: center;
+  /* Center vertically */
+  color: white;
+  /* Text color */
+  text-align: center;
+  /* Center text */
+  overflow: hidden;
+  /* Ensure content doesn't overflow */
+}
+
+.hero::before {
+  content: "";
+  /* Create a pseudo-element */
+  position: absolute;
+  /* Position it absolutely */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/Users/rohitsuresh/Downloads/eMandi-main/frontend/public/farm.jpg');
+  /* Replace with your image URL */
+  background-size: cover;
+  /* Cover the entire area */
+  background-position: center;
+  /* Center the image */
+  opacity: 0.5;
+  /* Set the transparency */
+  z-index: 1;
+  /* Place it behind the text */
+}
+
+.hero h1,
+.hero h4 {
+  position: relative;
+  /* Position text above the background */
+  z-index: 2;
+  /* Ensure text is above the background */
+  margin: 0.5rem 0;
+  /* Add some margin */
+  padding: 0 1rem;
+  /* Optional: Add padding for better readability */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  /* Adjust font size as needed */
+  max-width: 1200px;
+}
+
+.hero h4 {
+  font-size: 1.2rem;
+  /* Adjust font size as needed */
+  max-width: 1000px;
+  /* Optional: limit the width of the text */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.hero-button {
+  background-color: #ff5722;
+  /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  /* Smooth transition */
+}
+
+.hero-button:hover {
+  background-color: #e64a19;
+  /* Darker shade on hover */
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  /* Arrange the cards in a row */
+  justify-content: space-between;
+  /* Ensure cards are spaced evenly */
+  padding: 2rem;
+  gap: 1.5rem;
+  /* Adds space between cards */
+}
+
+.card {
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 30%;
+  /* Adjust width to fit all cards in the row */
+  text-align: center;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  /* Make the image responsive */
+  height: 200px;
+  /* Set a fixed height for the images */
+  object-fit: cover;
+  /* Ensure the image covers the area */
+  border-radius: 8px 8px 0 0;
+  /* Round the top corners */
+}
+
+.card h2 {
+  margin: 0.5rem 0;
+}
+
+.card h2 {
+  margin: 0.5rem 0;
+}
+
+.footer {
+  background-color: #272727;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  animation: fadeIn 1s ease-in-out;
+  /* Apply fade-in animation */
+}
