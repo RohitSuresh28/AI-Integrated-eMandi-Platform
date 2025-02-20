@@ -11,8 +11,8 @@ mysql_conn = None
 try:
     mysql_conn = mysql.connector.connect(
         host='localhost',       # Replace with your MySQL host
-        user='root',            # Replace with your MySQL username
-        password='Rohit@2809',  # Replace with your MySQL password
+        user='User_name',            # Replace with your MySQL username
+        password='Password',  # Replace with your MySQL password
         database='agri_analysis'  # Replace with your MySQL database name
     )
 
