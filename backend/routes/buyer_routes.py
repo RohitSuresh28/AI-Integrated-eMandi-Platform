@@ -10,7 +10,7 @@ try:
     mysql_conn = mysql.connector.connect(
         host='localhost',       # Replace with your MySQL host
         user='root',            # Replace with your MySQL username
-        password='Rohit@2809',  # Replace with your MySQL password
+        password='Password',  # Replace with your MySQL password
         database='agri_analysis'  # Replace with your MySQL database name
     )
 
